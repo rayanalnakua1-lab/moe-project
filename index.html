@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منظومة بيانات التعليم - وزارة التربية والتعليم</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f9fc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background-color: #1a365d;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1.25rem;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .container {
+            max-width: 500px;
+            width: 90%;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 5px solid #c69214;
+        }
+        .logo-placeholder {
+            width: 100px;
+            height: 100px;
+            background-color: #f0f4f8;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            border: 2px solid #1a365d;
+        }
+        .logo-placeholder span {
+            font-size: 0.8rem;
+            color: #1a365d;
+            font-weight: bold;
+        }
+        h1 {
+            color: #1a365d;
+            font-size: 1.6rem;
+            margin: 10px 0;
+        }
+        h2 {
+            color: #c69214;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        p {
+            line-height: 1.7;
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .btn {
+            display: block;
+            background-color: #1a365d;
+            color: white;
+            padding: 14px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 3px 6px rgba(26, 54, 93, 0.2);
+        }
+        .btn:hover {
+            background-color: #2a4d7c;
+            transform: translateY(-2px);
+        }
+        .btn-alt {
+            background-color: #c69214;
+            box-shadow: 0 3px 6px rgba(198, 146, 20, 0.2);
+        }
+        .btn-alt:hover {
+            background-color: #db1a365d;
+            background-color: #dca727;
+        }
+        footer {
+            margin-top: auto;
+            width: 100%;
+            background-color: #1a365d;
+            color: #e2e8f0;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.85rem;
+            border-top: 3px solid #c69214;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+  دولة <span>ليبيا</span> - وزارة <span>التربية</span> والتعليم
+    </header>
+
+    <div class="container">
+        <div class="logo-placeholder">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAADmr7s2AAAASFBMVEV/v9///////v//////v9//////v9//////f////3//////v//////v9//////v//////v9//////v//////v//////v//////f6GZkwAAAAVrstlVQAAAAWXRSTlMAQObw8AAAAAlwSFlzAAAOxAAADsQBlssOGwAAArNJREFUeF7t29lywzAIQFG8xXbi//+2Ey9p0pS2wTfIDOfpS0bggGAr0mX966OfP+vjG9gH9gH2gX1gH9gH2Af2gX1gH9gH9gH2gX2A9fEN7AP7APvAPrAP7AP8f3uAu7b0fVvHutIfe9wW76U2sA+wP74B5vN9K/N6P9NfPrc6wH79X77h7L3C3L3Zp7vP/9gH2K8D9vTtzf76WzKvf6Xf2AfYr/VrfN6+JvP6Xf2NfYA/7OEP+gP9gX6gP9Af6Af6A/2B/kB/oD/QH+gP9Af6A/2BfrCH9fENsD++AfbH7wWsn1sdwD9vX9/e7K+/JfP6V8A+wH6tX+Pz9jWZ1+9gH+CPe/iD/kB/oB/oD/QH+oP9QD/YD/ZDv9gP9kP/8of90L/8YT/Yh36yH+zD/u0B7N+ebTf376w+6bKutA7Y+0rf37/uPjN9wN30CXfd6bKudOOfK93uH/6wH+wH/WE/6Af7wX6wH+wH+wH7wX7wD/vBP+wH/7Af/MN+8A/7YT/YD/6Of7A/6E/6OfmD/fAH/eAP+qE/5gf9oT/kB/6QH/hDfuAP+YF/sB/6B/shP5Yf8mP5wX7ID+UH+8E/mA/9g/nwD/nBP/SDP8Sff0h/kD8IDPrD/yEw8B9g0R8gMOEPmPCH+EMUf0jGD/nBP/wOf6g/+A7/yD8CDP6A/wAGfgMM+gcY7AcM9AcG/AGGAf9AgmFgYBgIhgG/AYIDvwG9AbwBvAG8AbsBuxG5AboBugG6AboBOQLbEbcBuAG3AbcBcga2GW6G/xlshptBvxlwBroZboaZAWeAZYBlYFmAZUBlYFmgM9C/AGZgW6CzkFlwFlgWnAVmAZpBZkGawf4FYAnbEpaErWBKWBKWApbErYDF/gtYArYCbMFWhKVwK5iSdyvAhP8FwITfCcD6+Ab2gX2AfWAf2Af2Af4H7mGvC6D5gH8AAAAASUVORK5CYII=" alt="شعار" style="width:100%; height:100%; border-radius:50%; object-fit:contain;">
+        </div>
+
+        <h1>منظومة <span>بيانات</span> التعليم</h1>
+        
+<h2>مركز <span>المعلومات</span> والتوثيق</h2>
+        
+        <p>
+            منصة المؤشرات التربوية لقطاع التربية والتعليم، تُعنى بإتاحة بيانات دقيقة، وشاملة، ومحدّثة تتعلق بالطلاب والمعلمين والإداريين، إلى جانب توفير معلومات تفصيلية حول البنية التحتية للمؤسسات التعليمية على مستوى الدولة الليبية.
+        </p>
+
+        <div class="btn-group">
+            <a href="https://moe-gov.ly" class="btn">الدخول للمنظومة مدارس التعليم الخاص</a>
+          <a href="https://tiktok.com" class="btn" style="background:#000000; color:#ffffff; display:block; text-align:center; padding:12px; margin-top:15px; border-radius:8px; text-decoration:none; font-weight:bold;">متابعة عبر تيك توك</a>
+            <a href="https://moe-gov.ly" class="btn btn-alt">منصة المؤشرات التربوية</a>
+        </div>
+    </div>
+
+    <footer>
+        جميع الحقوق محفوظة 2026 - وزارة التربية والتعليم، دولة ليبيا | الموقع الرسمي عن الوزارة
+    </footer>
+
+</body>
+</html>
